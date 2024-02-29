@@ -14,6 +14,12 @@ def two_oldest_ages(ages):
         (2, 5)
     """
 
+
+    a = sorted(list(set(ages)), reverse=True)
+    return (a[0], a[1])
+
+    
+
     # NOTE: don't worry about an optimized runtime here; it's fine if
     # you have a runtime worse than O(n)
 

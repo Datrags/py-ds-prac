@@ -11,3 +11,16 @@ def remove_every_other(lst):
         >>> lst
         [1, 2, 3, 4, 5]
     """
+
+    arr = []
+
+    for i in range(0, len(lst), 2):
+        arr.append(lst[i])
+
+    return arr 
+
+
+lst = [1, 2, 3, 4, 5]
+
+
+print(remove_every_other(lst))

@@ -24,3 +24,13 @@ def truncate(phrase, n):
         >>> truncate("Woah", 3)
         '...'
     """
+
+    if n < 3:
+        return None
+    if n > len(phrase):
+        return phrase
+    return phrase[0:n - 3] + "..."
+
+print(truncate("Hello World", 6))
+print(truncate("Problem solving is the best!", 10))
+print(truncate("Yo", 100))

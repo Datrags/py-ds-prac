@@ -27,5 +27,12 @@ def is_odd_string(word):
         >>> is_odd_string('amazing')
         True
     """
+    s = 0
+    for letter in word:
+        s += ord(letter.lower())
+    
+    return s % 2 != 0
+
+print(is_odd_string('Amazing'))
 
     # Hint: you may find the ord() function useful here
